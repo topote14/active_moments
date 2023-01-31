@@ -1,0 +1,29 @@
+{
+  "name": "active_moments",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "server": "next dev",
+    "client": "npm start --prefix ./../backend",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\" ",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.1",
+    "animate.css": "^4.1.1",
+    "concurrently": "^7.6.0",
+    "cookie": "^0.5.0",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "jose": "^4.11.2",
+    "next": "13.1.1",
+    "next-themes": "^0.2.1",
+    "nodemon": "^2.0.20",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "sass": "^1.57.1"
+  }
+}

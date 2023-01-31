@@ -1,0 +1,49 @@
+div.navbarContainer {
+    background-color: #f1dede;
+    .user{
+        border-bottom: 2px solid $borde;
+        display:flex;
+        justify-content:space-between;
+        @include desktop{
+            display: none;
+        }
+        .logo{
+            .logoImg{
+                position: relative;
+                left: 30px;
+                top: 3px;
+            }
+            .logoName{
+                position: relative;
+                bottom: 5px;
+            }
+            
+            display:grid;
+            flex-direction: column;
+            img{
+            margin-bottom: 7px;
+            margin-left: 22px;
+            }
+            height: 68px;
+        }
+        .name{
+            display: flex;
+            margin-right: 10px;
+            margin-top: 20px;
+            margin-left: 22px;
+            h3{
+                font-size: 1rem;
+                color: $texto;
+                margin-top: 0.5rem;
+                position: relative;
+                right: 1px;
+                margin-right: 10px;
+            }
+            .logoUser, .search{
+                border-radius:60%;
+                padding: 2px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

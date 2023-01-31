@@ -1,0 +1,128 @@
+div.navDesktop{
+    
+div.nav{
+    margin-top: 40px;
+   
+}
+    @include mobile{
+        display: none;
+    }
+    @include desktop{
+        display: initial;
+    }
+  img{
+    margin-left: 10%;
+    margin-top: 20px;
+}
+border-right: 3px solid $borde;
+position: fixed;
+width: 200px;
+height: 100%;
+   
+div.home{
+    margin-top: 50px;
+
+    i{    
+        font-size:xx-large;
+        color: $icono;
+
+    }
+ 
+    color: $texto;
+    display: flex;
+    flex-direction: row;
+    h3{
+
+        position: relative;
+        left: 50px;
+        top: 5px;
+    }
+}
+div.searchNav{
+    
+    margin-top: 50px;
+
+    i{
+        font-size:xx-large;
+        color: $icono;
+    }
+    color: $texto;
+    display: flex;
+    flex-direction: row;
+    h3{
+
+        position: relative;
+        left: 50px;
+        top: 5px;
+    }
+}
+div.addPublication{
+    margin-top: 50px;
+
+    i{
+        font-size:xx-large;
+        color: $icono;
+    }
+    color: $texto;
+    display: flex;
+    flex-direction: row;
+    h3{
+
+        position: relative;
+        left: 50px;
+        top: 5px;
+    }
+}
+div.profile{
+    margin-top: 60px;
+    :hover{
+        transition:0.5s;
+        transition-delay: 0.5s;
+        border-bottom: 3px solid $texto;
+    }
+        i{
+        font-size:xx-large;
+        color: $icono;
+    }
+    color: $texto;
+    display: flex;
+    flex-direction:row;
+    h3{
+
+        position: relative;
+        left: 30px;
+        top: 5px;
+    }
+}
+ 
+ 
+}
+div.burger{
+   position: relative;
+   left: 20px;
+    @include mobile{
+        display: none;
+    }
+    @include desktop{
+        display: initial;
+    }
+    color: $texto;
+    display: flex;
+    flex-direction:row;
+    top: 500px;
+    position: fixed;
+    i{
+        font-size: xx-large;
+        color: $icono;
+    }
+    h3{
+        position: relative;
+        left: 50px;
+        bottom: 30px;
+    }
+    i.arrow{
+        position: relative;
+        left: 60px;
+    }
+   
+}

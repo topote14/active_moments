@@ -1,0 +1,54 @@
+@import "./mixins";
+
+
+$primary-color: #d34646;
+$secondary-color: #ac4949c0;
+$text-color: #b12e2ec4;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+div.loader {
+    border-radius: 50%;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+button[type="submit"] {
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@import "./feed";
+@import "./login";
+@import "./post";
+@import "./newPost";
+@import "./navMobile";
+@import "./navDesktop";
+@import "./burgermenu";
+@import "./header";

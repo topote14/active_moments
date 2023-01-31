@@ -1,0 +1,44 @@
+div.headerContain{
+    margin-top: 10px;
+
+    @include tablet{
+        display: none;
+    }
+    margin-right: 10px;
+    margin-left: 10px;
+    div.headerImg{
+        background-image: url('../public/testImg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.8;
+        width: 100%;
+        height: 161px;
+        border: 2px solid $borde;
+        border-radius: 20px;
+    }
+    div.userImg{
+        display: flex;
+        justify-content: center;
+        div.user{
+            position: relative;
+            bottom: 50px;
+            h6{
+                text-align: center;
+            }
+        }
+        img{
+            left: 30px;
+            position: relative;
+            border-radius: 30px;
+            border: 2px solid $borde;
+            bottom: 60px;
+
+        }
+    }
+    .public{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
